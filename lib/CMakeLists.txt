@@ -401,7 +401,8 @@ else()
 install(TARGETS ${PROJECT_NAME}
         LIBRARY
           DESTINATION ${DEFAULT_LIB_PATH}
-          COMPONENT Libraries)
+          COMPONENT Libraries
+        ARCHIVE DESTINATION ${DEFAULT_LIB_PATH})
 endif()
 endif(DEFAULT_LIB_PATH)
 
